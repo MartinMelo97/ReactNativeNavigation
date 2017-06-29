@@ -10,14 +10,14 @@ class SizeandColor extends Component {
                 <Item floatingLabel>
                     <Label>Talla de playera</Label>
                     <Input 
-                    onChange = {(size)=>this.props.addSize(size.target.event)}
+                    onChangeText = {(size)=>this.props.addSize(size)}
                     />
                 </Item>
                 <Item floatingLabel>
                     <Label>Color de playera</Label>
                     <Input
                     
-                    onChange = {(col)=>this.props.addColor(col.target.event)}
+                    onChangeText = {(col)=>this.props.addColor(col)}
                     />
                 </Item>
                 <Button
